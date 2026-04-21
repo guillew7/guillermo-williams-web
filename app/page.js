@@ -1,3 +1,15 @@
+import {
+  Brain,
+  Users,
+  Sparkles,
+  Puzzle,
+  Cloud,
+  Globe,
+  MessageCircle,
+  ClipboardList,
+  CalendarCheck
+} from "lucide-react";
+
 export default function Home() {
   return (
     <main>
@@ -23,254 +35,212 @@ export default function Home() {
         </div>
       </header>
 
+
       {/* HERO */}
       <section className="hero">
-        <div className="wrap">
-          <div className="hero-copy" style={{ maxWidth: 680 }}>
-            <div className="eyebrow">Psicoterapia online</div>
+        <h1>
+          Sabés que algo te está afectando, pero no siempre es fácil entender qué te pasa o cómo salir de eso.
+        </h1>
 
-            <h1>
-              Sabés que algo te está afectando, pero no siempre es fácil entenderlo o cambiarlo.
-            </h1>
+        <p className="hero-sub">
+          Pensás demasiado, te cuesta desconectar, algo se repite en tus vínculos o sentís un malestar que no terminás de ordenar.
+          La terapia puede ser un espacio para entenderlo mejor y empezar a trabajarlo con más claridad.
+        </p>
 
-            <p className="hero-text">
-              Pensás demasiado, te cuesta desconectar o hay situaciones que se repiten y no terminás de ordenar.
-            </p>
+        <div className="hero-cta">
+          <a href="https://wa.me/5491158277881" className="btn-primary">
+            Escribirme por WhatsApp
+          </a>
+          <a href="#contacto" className="btn-secondary">
+            Hacer una consulta
+          </a>
+        </div>
 
-            <p className="hero-text">
-              No es falta de voluntad. A muchas personas les pasa cuando vienen sosteniendo lo mismo durante mucho tiempo.
-            </p>
-
-            <div className="hero-actions">
-              <a href="https://wa.me/5491158277881" className="btn btn-primary">
-                Escribirme por WhatsApp
-              </a>
-              <a href="#contacto" className="btn btn-secondary">
-                Hacer una consulta
-              </a>
-            </div>
-
-            <div className="hero-notes">
-              <span>Atención online</span>
-              <span>Primera entrevista de orientación</span>
-            </div>
-          </div>
+        <div className="hero-badges">
+          <span>Atención online</span>
+          <span>Primera entrevista de orientación</span>
+          <span>Confidencialidad profesional</span>
         </div>
       </section>
 
-      {/* IDENTIFICACIÓN */}
-      <section className="section section-soft">
-        <div className="wrap two-col">
-          <div>
-            <div className="eyebrow">Motivos de consulta</div>
-            <h2>Puede que te esté pasando algo de esto</h2>
+      <section className="empatia">
+        <h2>Puede que se sienta más o menos así</h2>
 
-            <p className="section-text">
-              No siempre es una crisis clara. A veces es una acumulación de cosas
-              que se vuelven difíciles de sostener.
-            </p>
+        <p>
+          Tal vez venís sosteniendo cosas hace tiempo y ya no te resulta tan fácil seguir igual.
+          Puede aparecer como ansiedad, cansancio mental, irritabilidad, angustia, confusión en los vínculos o una sensación de estar trabado.
+        </p>
 
-            <p className="section-text">
-              El espacio terapéutico permite poner en palabras lo que pasa,
-              entenderlo y empezar a trabajarlo con una dirección clara.
+        <p>
+          No siempre hay una crisis clara. A veces es una acumulación que se vuelve difícil de sostener.
+        </p>
+      </section>
+
+      {/* MOTIVOS*/}
+      <section className="motivos" id="motivos">
+        <h2>Puede que hoy te esté pasando algo de esto</h2>
+
+        <div className="motivos-grid">
+          <div className="motivo-card">
+            <div className="icono"><Brain /></div>
+            <h3>Ansiedad y sobrecarga mental</h3>
+            <p>
+              Pensamientos que no paran, dificultad para desconectar o sensación
+              de estar siempre en alerta.
             </p>
           </div>
 
-          <div className="issues-grid">
-            <div className="issue">
-              Pensamientos que no paran o dificultad para desconectar
-            </div>
-            <div className="issue">
-              Vínculos que generan desgaste, confusión o malestar
-            </div>
-            <div className="issue">
-              Situaciones que se repiten y no sabés cómo cambiar
-            </div>
-            <div className="issue">
-              Sensación de estar trabado o sin rumbo
-            </div>
-            <div className="issue">
-              Angustia difícil de explicar
-            </div>
-            <div className="issue">
-              Dificultad para sostener cambios en el tiempo
-            </div>
+          <div className="motivo-card">
+            <div className="icono"><Users /></div>
+            <h3>Conflictos en los vínculos</h3>
+            <p>
+              Relaciones que generan desgaste, confusión o situaciones que se
+              repiten y no sabés bien cómo manejar.
+            </p>
+          </div>
+
+          <div className="motivo-card">
+            <div className="icono"><Sparkles /></div>
+            <h3>Crisis y cambios importantes</h3>
+            <p>
+              Separaciones, pérdidas, mudanzas, decisiones difíciles o momentos en
+              los que algo deja de funcionar como antes.
+            </p>
+          </div>
+
+          <div className="motivo-card">
+            <div className="icono"><Puzzle /></div>
+            <h3>Sensación de estancamiento</h3>
+            <p>
+              Estar trabado, sin rumbo claro o repitiendo formas de vivir que hoy
+              ya no te hacen bien.
+            </p>
+          </div>
+
+          <div className="motivo-card">
+            <div className="icono"><Cloud /></div>
+            <h3>Angustia difícil de ordenar</h3>
+            <p>
+              Un malestar persistente que cuesta nombrar con claridad, pero que se
+              hace sentir en lo cotidiano.
+            </p>
+          </div>
+
+          <div className="motivo-card">
+            <div className="icono"><Globe /></div>
+            <h3>Desarraigo y duelo migratorio</h3>
+            <p>
+              Vivir lejos, adaptarte a otro entorno o sentir que no terminás de
+              pertenecer del todo a ningún lugar.
+            </p>
           </div>
         </div>
       </section>
+      {/* TRUST BAR */}
+      <section className="trust">
+        <div className="trust-items">
+          <span>Lic. en Psicología · UBA</span>
+          <span>M.N. 67758 · M.P. 86605</span>
+          <span>Más de 10 años de experiencia</span>
+          <span>Atención online</span>
+          <span>Enfoque integrativo</span>
+        </div>
+      </section>
+
 
       {/* SOBRE MI */}
-      <section id="sobre" className="section">
-        <div className="wrap two-col">
-          <div className="about-card">
-            <img
-              src="https://via.placeholder.com/400x500"
-              alt="Lic. Guillermo Williams"
-              className="about-photo"
-            />
+      <section className="sobre-mi" id="sobre">
+        <h2>Sobre mí</h2>
 
-            <div className="about-card-body">
-              <div className="about-name">Lic. Guillermo Williams</div>
+        <p>
+          Soy Guillermo Williams, psicólogo, egresado de la Universidad de Buenos Aires.
+          Trabajo con adultos y jóvenes adultos desde un enfoque integrativo, articulando distintas herramientas según lo que cada proceso requiera.
+        </p>
 
-              <div className="about-meta">
-                Psicólogo · M.N. 67758 – M.P. 86605
-              </div>
+        <p>
+          Además de la práctica clínica, cuento con experiencia en instituciones y dispositivos de salud mental, lo que me permitió trabajar con problemáticas diversas.
+        </p>
 
-              <div style={{ marginTop: 6, fontSize: 14, color: "#6b7280" }}>
-                +10 años de experiencia en salud mental
-              </div>
-
-              <p className="about-mini">
-                Psicoterapia online para adultos, con una forma de trabajo clara, cuidada y orientada a que el proceso resulte útil.
-              </p>
-            </div>
-          </div>
-
-          <div className="content-col">
-            <p>
-              Soy psicólogo formado en la Universidad de Buenos Aires y trabajo desde un enfoque integrador.
-            </p>
-
-            <p>
-              Trabajo con personas a las que les está pasando algo que no terminan de entender o de resolver, y que puede aparecer de distintas formas.
-            </p>
-
-            <p>
-              Mi forma de trabajar no es solo escuchar. La idea es que el espacio sirva para entender lo que te pasa, ordenarlo y empezar a producir cambios.
-            </p>
-
-            <p>
-              Busco que el proceso sea claro, con intercambio y devolución. Que no quede en algo enigmático, sino que tenga sentido y resulte útil.
-            </p>
-
-            <div className="pillars">
-              <div className="pillar">
-                <div className="mini-label">Formación</div>
-                <p>Psicólogo (UBA)</p>
-              </div>
-              <div className="pillar">
-                <div className="mini-label">Enfoque</div>
-                <p>Integrativo</p>
-              </div>
-              <div className="pillar">
-                <div className="mini-label">Trabajo</div>
-                <p>Claro, con dirección y devolución</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <p>
+          Mi objetivo es ofrecer un espacio serio, claro y confidencial, donde lo que te pasa pueda ser pensado de manera singular, sin respuestas prefabricadas.
+        </p>
       </section>
 
-      {/* SERVICIOS */}
-      <section id="servicios" className="section">
-        <div className="wrap">
-          <div className="section-head">
-            <div className="eyebrow">Servicios</div>
-            <h2>
-              Un espacio para trabajar lo que te pasa, no solo hablar de eso.
-            </h2>
+      {/* COMO TRABAJO */}
+      <section className="como-trabajo" id="servicios">
+        <h2>Cómo trabajo</h2>
+
+        <p className="intro">
+          El objetivo no es solamente hablar de lo que te pasa, sino poder entenderlo mejor y trabajar para que algo efectivamente se mueva.
+        </p>
+
+        <div className="trabajo-grid">
+
+          <div>
+            <h3>Entender qué está pasando</h3>
+            <p>Ubicar el problema, cómo se armó y qué lo sostiene.</p>
           </div>
 
-          <div className="services-grid">
-            <article className="service-card">
-              <h3>Ansiedad y sobrepensamiento</h3>
-              <p>
-                Entender qué está pasando y encontrar formas más manejables de
-                transitarlo.
-              </p>
-            </article>
-
-            <article className="service-card">
-              <h3>Conflictos en los vínculos</h3>
-              <p>
-                Ordenar lo que está en juego y poder intervenir de otra manera.
-              </p>
-            </article>
-
-            <article className="service-card">
-              <h3>Crisis y momentos de cambio</h3>
-              <p>
-                Procesar lo que está pasando y construir una nueva orientación.
-              </p>
-            </article>
-
-            <article className="service-card">
-              <h3>Malestar persistente</h3>
-              <p>
-                Trabajar situaciones que se repiten y generan estancamiento.
-              </p>
-            </article>
-
-            <article className="service-card">
-              <h3>Terapia online</h3>
-              <p>
-                Atención para Argentina y argentinos en el exterior.
-              </p>
-            </article>
+          <div>
+            <h3>Ordenar el malestar</h3>
+            <p>Poner en palabras, diferenciar y clarificar lo que hoy aparece mezclado.</p>
           </div>
+
+          <div>
+            <h3>Producir cambios</h3>
+            <p>Trabajar para que algo cambie en la forma de estar, decidir o vincularse.</p>
+          </div>
+
         </div>
       </section>
 
       {/* PROCESO */}
-      <section id="proceso" className="section section-soft">
-        <div className="wrap two-col">
+      <section className="proceso" id="proceso">
+        <h2>Cómo es el proceso para empezar</h2>
 
-          <div>
-            <div className="eyebrow">Cómo es el proceso</div>
-            <h2>Empezar es más simple de lo que parece.</h2>
+        <p className="proceso-intro">
+          El primer paso es simple. La idea es que desde el inicio tengas claridad sobre
+          cómo trabajo, qué modalidad ofrezco y si este espacio puede servirte.
+        </p>
 
-            <p className="section-text">
-              El primer paso no tiene que estar del todo claro. La idea es ir ordenando
-              lo que te pasa a partir de un espacio de trabajo profesional.
+        <div className="pasos">
+          <div className="paso-card">
+            <div className="paso-icono"><MessageCircle /></div>
+            <h3>1. Primer contacto</h3>
+            <p>
+              Podés escribirme por WhatsApp para consultar disponibilidad, honorarios
+              o hacer una primera pregunta.
             </p>
           </div>
 
-          <div className="steps">
+          <div className="paso-card">
+            <div className="paso-icono"><ClipboardList /></div>
+            <h3>2. Primeras entrevistas</h3>
+            <p>
+              En los primeros encuentros ubicamos mejor el motivo de consulta, el
+              momento que estás atravesando y qué necesitás trabajar.
+            </p>
+          </div>
 
-            <div className="step">
-              <div className="step-num">01</div>
-              <div>
-                <h3>Primer contacto</h3>
-                <p>
-                  Podés escribir por WhatsApp para hacer una consulta inicial y coordinar un turno.
-                </p>
-              </div>
-            </div>
-
-            <div className="step">
-              <div className="step-num">02</div>
-              <div>
-                <h3>Primera entrevista</h3>
-                <p>
-                  Es un primer encuentro para entender qué te está pasando y ver si tiene sentido iniciar un proceso terapéutico.
-                </p>
-              </div>
-            </div>
-
-            <div className="step">
-              <div className="step-num">03</div>
-              <div>
-                <h3>Definición del trabajo</h3>
-                <p>
-                  Se acuerda la modalidad y la frecuencia de las sesiones según cada caso.
-                </p>
-              </div>
-            </div>
-
-            <div className="step">
-              <div className="step-num">04</div>
-              <div>
-                <h3>Proceso terapéutico</h3>
-                <p>
-                  A partir de ahí se trabaja de forma sostenida para entender lo que te pasa y generar cambios concretos.
-                </p>
-              </div>
-            </div>
-
+          <div className="paso-card">
+            <div className="paso-icono"><CalendarCheck /></div>
+            <h3>3. Definimos cómo seguir</h3>
+            <p>
+              Si decidimos avanzar, acordamos frecuencia, modalidad de trabajo y un
+              encuadre claro para sostener el proceso.
+            </p>
           </div>
         </div>
-      </section>
 
+        <p className="proceso-cierre">
+          No hace falta que llegues con todo claro. Muchas veces el primer paso es,
+          simplemente, empezar a hablar de lo que te viene pasando.
+        </p>
+
+        <a href="https://wa.me/5491158277881" className="btn-primary">
+          Hacer una consulta
+        </a>
+      </section>
       {/* FAQ */}
       <section id="faq" className="section">
         <div className="wrap">
@@ -348,28 +318,17 @@ export default function Home() {
       </section>
 
       {/* CTA FINAL */}
-      <section className="section">
-        <div className="wrap cta-panel">
-          <div>
-            <div className="eyebrow cta-eyebrow">Contacto</div>
-            <h2>
-              Si sentís que esto te pasa, podés escribirme y lo vemos.
-            </h2>
-            <p>
-              Podés escribir directamente por WhatsApp. No hace falta que tengas todo
-              claro para empezar.
-            </p>
-          </div>
+      <section className="cta-final" id="contacto">
+        <h2>Si sentís que podría ayudarte, podés escribirme</h2>
 
-          <div className="cta-actions">
-            <a
-              href="https://wa.me/5491158277881"
-              className="btn btn-light"
-            >
-              Escribirme por WhatsApp
-            </a>
-          </div>
-        </div>
+        <p>
+          A veces no es fácil dar el primer paso.
+          Si querés hacer una consulta o coordinar una primera entrevista, podés contactarme por WhatsApp.
+        </p>
+
+        <a href="https://wa.me/5491158277881" className="btn-primary">
+          Escribirme por WhatsApp
+        </a>
       </section>
 
 
